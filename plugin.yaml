@@ -1,6 +1,6 @@
 name: AWS SSM Node Executor
-version: 1.0
-rundeckPluginVersion: 1.0
+version: 1.2
+rundeckPluginVersion: 1.2
 author: Jake Cohen
 date: 7/6/21
 providers:
