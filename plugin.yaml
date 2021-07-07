@@ -7,7 +7,7 @@ providers:
   - name: ssm-executor
     service: NodeExecutor
     title: 'AWS SSM / Node Executor'
-    description: Executes a command on a remote node using AWS SSM
+    description: Executes commands on nodes using AWS SSM. The AWS CLI must be installed on the Rundeck server, and the IAM Policies must permit the Rundeck server to send messages via SSM. 
     plugin-type: script
     script-interpreter: /usr/bin/env bash
     script-file: exec
