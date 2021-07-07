@@ -1,0 +1,14 @@
+name: AWS SSM Node Executor
+version: 1.0
+rundeckPluginVersion: 1.0
+author: Jake Cohen
+date: 7/6/21
+providers:
+  - name: ssm-executor
+    service: NodeExecutor
+    title: 'AWS SSM / Node Executor'
+    description: Executes a command on a remote node using AWS SSM
+    plugin-type: script
+    script-interpreter: /usr/bin/env bash
+    script-file: exec
+    script-args: ${node.instanceId} ${exec.command}
