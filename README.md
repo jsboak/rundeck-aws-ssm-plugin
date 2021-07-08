@@ -13,11 +13,11 @@ You can do this by adding the **AmazonSSMAutomationRole** IAM Policy to the role
    More details can be found in Rundeck's documentation on [installing plugins](https://docs.rundeck.com/docs/administration/configuration/plugins/installing.html#installation). 
     
     
-#### 3a. To set this as the Node Executor for individual nodes, add the following to the custom attributes of your node(s) definition:
+#### 4a. To set this as the Node Executor for individual nodes, add the following to the custom attributes of your node(s) definition:
     node-executor: ssm-executor
     
-#### 3b. Optionally set this to be the default method of Node Execution at the Project level:
+#### 4b. Optionally set this to be the default method of Node Execution at the Project level:
   Set the [Default Node Executor](https://docs.rundeck.com/docs/manual/project-settings.html#edit-configuration) in the GUI to **AWS SSM / Node Executor**, or manually add `service.NodeExecutor.default.provider=ssm-executor` to the project config file.
 
-#### 3c. Optionally set this to be the default method of Node Execution at the Framework level (system wide): 
+#### 4c. Optionally set this to be the default method of Node Execution at the Framework level (system wide): 
   Set `service.NodeExecutor.default.provider=ssm-executor` in `framework.properties`
